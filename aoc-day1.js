@@ -1,7 +1,7 @@
 //This solution assumes the data is input as an array of numbers.
 
 //part 1
-const count = (array) =>{
+const countIncreased = (array) =>{
 const increased = array.filter((item, i, arr)=>{
   return item > arr[i-1];
 })
@@ -10,7 +10,7 @@ const answer = increased.length + 1;
 return answer;
 }
 
-//part 2
+//part 2 (for this problem, size = 3)
 const slidingWindow = (arr, size) => {
   let result = [];
   let lastWindow = arr.length - size;
