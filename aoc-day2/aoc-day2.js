@@ -13,18 +13,17 @@ const navigate = () =>{
 			if(directions[i].includes("forward")){
 				horizontalPos += tempValue;
 			}
-				else if(directions[i].includes("down")){
-					depth += tempValue;
-				}
-					else if(directions[i].includes("up")){
-						depth -= tempValue;
-					}
+			else if(directions[i].includes("down")){
+				depth += tempValue;
 			}
-			console.log(horizontalPos, depth);
-			console.log(horizontalPos * depth);
-			return horizontalPos * depth;
+			else if(directions[i].includes("up")){
+				depth -= tempValue;
+			}
 		}
-	);
+		console.log(horizontalPos, depth);
+		console.log(horizontalPos * depth);
+		return horizontalPos * depth;
+	});
 }
 navigate();
 
@@ -52,6 +51,7 @@ const adjustAim = () => {
 		console.log(horizontalPos, depth);
 		console.log(horizontalPos * depth);
 		return horizontalPos * depth;
-});}
+	});
+}
 
 adjustAim();
