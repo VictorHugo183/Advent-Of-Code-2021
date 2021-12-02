@@ -7,15 +7,17 @@ const navigate = () =>{
 		console.log(directions);
 		let horizontalPos = 0;
 		let depth = 0;
+		let tempValue = 0;
 		for(let i =0; i < directions.length; i++){
+			tempValue = parseInt(directions[i].split(" ")[1]);
 			if(directions[i].includes("forward")){
-				horizontalPos += parseInt(directions[i].split(" ")[1]);
+				horizontalPos += tempValue;
 			}
 				else if(directions[i].includes("down")){
-					depth += parseInt(directions[i].split(" ")[1]);
+					depth += tempValue;
 				}
 					else if(directions[i].includes("up")){
-						depth -= parseInt(directions[i].split(" ")[1]);
+						depth -= tempValue;
 					}
 			}
 			console.log(horizontalPos, depth);
@@ -35,17 +37,15 @@ const adjustAim = () => {
 		let aim = 0;
 		let tempValue = 0;
 		for(let i =0; i < directions.length; i++){
+			tempValue = parseInt(directions[i].split(" ")[1]);
 			if(directions[i].includes("forward")){
-				tempValue = parseInt(directions[i].split(" ")[1]);
 				horizontalPos += tempValue;
 				depth += aim * tempValue;
 			}
 			else if(directions[i].includes("down")){
-				tempValue = parseInt(directions[i].split(" ")[1]);
 				aim += tempValue;
 			}
 			else if(directions[i].includes("up")){
-				tempValue = parseInt(directions[i].split(" ")[1]);
 				aim -= tempValue;
 			}
 		}
