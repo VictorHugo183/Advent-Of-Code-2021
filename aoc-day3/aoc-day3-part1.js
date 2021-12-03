@@ -6,7 +6,7 @@ function powerConsumption(){
     let gammaRate = "";
     let epsilonRate = "";
     let temp0 = 0;
-    let temp1 = 1;
+    let temp1 = 0;
     let length = 0;
     while(length < 12){
       for(let i = 0; i < binaryData.length; i++){
@@ -24,7 +24,7 @@ function powerConsumption(){
         epsilonRate = `${epsilonRate}0`;
       }
       temp0 = 0;
-      temp1 = 1;
+      temp1 = 0;
       length++;
     }
     let answer = parseInt(gammaRate, 2) * parseInt(epsilonRate, 2);
