@@ -33,5 +33,4 @@ const optimalPosition = (list) =>{
   console.log("total fuel cost: ", fuelCost);
 }
 optimalPosition(list);
-//optimalPosition(list); 
 //median = 341, total fuel cost = 349357
