@@ -62,4 +62,4 @@ QUESTION:
 How many lanternfish would there be after 80 days?
 
 ANSWER:
-Your puzzle answer was ```5934```.
+Your puzzle answer was ```371379```.
