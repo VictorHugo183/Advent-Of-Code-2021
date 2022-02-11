@@ -1,5 +1,7 @@
 # Advent of Code 2021
-My solutions to the 2021 Advent of Code challenges.
+My solutions to the 2021 Advent of Code challenges.<br>
+Each solution is based on a given input file for that particular challenge, inputs are unique to each participant.
+
 
 ## What is Advent of Code?
 > Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like **yes, including JavaScript and Python!!!**
